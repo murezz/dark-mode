@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$pacifico : 'Pacifico', sans-serif;
+$poppins : 'Poppins', sans-serif;
+
+$bebeas : linear-gradient(#833AB4, #E1306C, #FCAF45);
+
+$primary : #0d6efd;
+$secondary: #0E3854;
+$dark : #2e2c2c;
+$light : #f0f0f0;
+
+body{
+    background: $light;
+}
+
+.dark{
+    background: $dark;
+}
+
+#home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    .navbar-brand{
+        color: $secondary;
+        font-family: $pacifico;
+        font-size: 24px;
+    }
+    #navbarNavAltMarkup{
+        .navbar-nav{
+            .nav-link{
+                margin-right: 25px;
+                color: $dark;
+                &:hover{
+                    color: $secondary;
+                    transition: 0.3s;
+                }
+            }
+            .active{
+                color: $secondary;
+                font-weight: bolder;
+            }
+            .sun{
+                margin-top: 10px;
+                color: $dark;
+                i{
+                    border-radius: 100%;
+                    box-shadow: 0 0 40px $dark;
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.dark{
+    nav{
+        .navbar-brand{
+            color: $primary;
+        }
+        #navbarNavAltMarkup{
+            .navbar-nav{
+                .nav-link{
+                    margin-right: 25px;
+                    color: $light;
+                    &:hover{
+                        color: $primary;
+                        transition: 0.3s;
+                    }
+                }
+                .active{
+                    color: $primary;
+                    font-weight: bolder;
+                }
+                .sun{
+                    margin-top: 10px;
+                    color: $light;
+                    i{
+                        border-radius: 100%;
+                        box-shadow: 0 0 40px $light;
+                        cursor: pointer;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.image{
+    border-radius: 100%;
+    box-shadow: 0 0 50px $dark;
+    img{
+        width: 250px;
+    }
+}
+
+.dark{
+    .image{
+        box-shadow: 0 0 25px $light;
+    }
+}
+
+.desc{
+    color: $secondary;
+}
+
+.dark{
+    .desc{
+        color: $primary;
+    }
+}
+
+.footer{
+    i{
+        color: $secondary;
+    }
+}
+
+.dark{
+    .footer{
+        i{
+            color: $primary;
+        }
+    }
+}
+
